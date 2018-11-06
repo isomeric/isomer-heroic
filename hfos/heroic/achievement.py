@@ -34,7 +34,7 @@ Generic countable thing definition
 
 """
 
-from hfos.schemata.base import base_object
+from isomer.schemata.base import base_object
 
 AchievementSchema = base_object('achievement', all_roles='crew')
 

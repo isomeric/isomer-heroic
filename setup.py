@@ -42,9 +42,9 @@ This software package is a plugin module for HFOS.
       install_requires=[
           'hfos>=1.2.0'
       ],
-      entry_points="""[hfos.components]
+      entry_points="""[isomer.components]
     heroic=hfos.heroic.heroic:Heroic
-[hfos.schemata]
+[isomer.schemata]
     achievement=hfos.heroic.achievement:Achievement
     badge=hfos.heroic.badge:Badge
     """,

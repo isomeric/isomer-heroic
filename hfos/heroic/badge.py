@@ -33,8 +33,8 @@ Badges - mostly provisioned stuff
 
 """
 
-from hfos.schemata.defaultform import editbuttons
-from hfos.schemata.base import base_object
+from isomer.schemata.defaultform import editbuttons
+from isomer.schemata.base import base_object
 
 BadgeSchema = base_object('badge', all_roles='crew')
 
