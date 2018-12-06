@@ -1,4 +1,4 @@
-"""Countables components for HFOS"""
+"""Trophies and badges for Isomer"""
 
 __author__ = "Heiko 'riot' Weinen <riot@c-base.org>"
 __license__ = "AGPLv3"

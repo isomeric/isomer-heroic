@@ -1,8 +1,8 @@
 #!/usr/bin/env python
 # -*- coding: UTF-8 -*-
 
-# HFOS - Hackerfleet Operating System
-# ===================================
+# Isomer Application Framework
+# ============================
 # Copyright (C) 2011-2018 Heiko 'riot' Weinen <riot@c-base.org> and others.
 #
 # This program is free software: you can redistribute it and/or modify
@@ -23,30 +23,30 @@ __license__ = "AGPLv3"
 
 from setuptools import setup, find_packages
 
-setup(name="hfos-heroic",
+setup(name="isomer-heroic",
       version="0.0.1",
-      description="hfos-heroic - a module for badges and achievements",
-      author="Hackerfleet Community",
+      description="isomer-heroic - a module for badges and achievements",
+      author="Isomer Community",
       author_email="riot@c-base.org",
-      url="https://github.com/hackerfleet/hfos-heroic",
+      url="https://github.com/isomeric/isomer-heroic",
       license="GNU Affero General Public License v3",
       packages=find_packages(),
-      long_description="""HFOS - Heroic
-=============
+      long_description="""Isomer - Heroic
+===============
 
 A module to add badge and achievement functionality.
 
-This software package is a plugin module for HFOS.
+This software package is a plugin module for Isomer.
 """,
       dependency_links=[],
       install_requires=[
-          'hfos>=1.2.0'
+          'isomer>=1.0.0'
       ],
       entry_points="""[isomer.components]
-    heroic=hfos.heroic.heroic:Heroic
+    heroic=isomer.heroic.heroic:Heroic
 [isomer.schemata]
-    achievement=hfos.heroic.achievement:Achievement
-    badge=hfos.heroic.badge:Badge
+    achievement=isomer.heroic.achievement:Achievement
+    badge=isomer.heroic.badge:Badge
     """,
       test_suite="tests.main.main",
       )

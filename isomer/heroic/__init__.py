@@ -1,1 +1,1 @@
-"""Countables components for HFOS"""
+"""Trophies and badges for Isomer"""
