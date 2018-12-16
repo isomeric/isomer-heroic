@@ -23,30 +23,31 @@ __license__ = "AGPLv3"
 
 from setuptools import setup, find_packages
 
-setup(name="isomer-heroic",
-      version="0.0.1",
-      description="isomer-heroic - a module for badges and achievements",
-      author="Isomer Community",
-      author_email="riot@c-base.org",
-      url="https://github.com/isomeric/isomer-heroic",
-      license="GNU Affero General Public License v3",
-      packages=find_packages(),
-      long_description="""Isomer - Heroic
+setup(
+    name="isomer-heroic",
+    version="0.0.1",
+    description="isomer-heroic - a module for badges and achievements",
+    author="Isomer Community",
+    author_email="riot@c-base.org",
+    url="https://github.com/isomeric/isomer-heroic",
+    license="GNU Affero General Public License v3",
+    packages=find_packages(),
+    long_description="""Isomer - Heroic
 ===============
 
-A module to add badge and achievement functionality.
+Badges and achievements functionality.
 
 This software package is a plugin module for Isomer.
 """,
-      dependency_links=[],
-      install_requires=[
-          'isomer>=1.0.0'
-      ],
-      entry_points="""[isomer.components]
+    dependency_links=[],
+    install_requires=[
+        'isomer>=1.0.0'
+    ],
+    entry_points="""[isomer.components]
     heroic=isomer.heroic.heroic:Heroic
 [isomer.schemata]
     achievement=isomer.heroic.achievement:Achievement
     badge=isomer.heroic.badge:Badge
     """,
-      test_suite="tests.main.main",
-      )
+    test_suite="tests.main.main",
+)
