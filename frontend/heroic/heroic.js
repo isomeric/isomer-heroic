@@ -39,14 +39,14 @@ class countablescomponent {
         self.badges = [];
 
         this.getAwards = function () {
-            self.op.search('achievements', '', '*').then(function(msg){
+            self.op.search('achievements', '', '*').then(function (msg) {
                 let achievements = msg.data.list;
                 console.log('[HERO] Achievements:', achievements);
                 for (let item of achievements) {
                     self.achievements.push(item);
                 }
             });
-            self.op.search('badges', '', '*').then(function(msg){
+            self.op.search('badges', '', '*').then(function (msg) {
                 let badges = msg.data.list;
                 for (let item of badges) {
                     self.badges.push(item);

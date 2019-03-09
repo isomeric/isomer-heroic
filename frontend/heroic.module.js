@@ -25,7 +25,7 @@
 import angular from 'angular';
 import uirouter from 'angular-ui-router';
 
-import { routing } from './heroic.config.js';
+import {routing} from './heroic.config.js';
 
 import heroiccomponent from './heroic/heroic.js';
 import template from './heroic/heroic.tpl.html';
